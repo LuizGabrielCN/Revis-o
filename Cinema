@@ -1,0 +1,19 @@
+import numpy as np
+from numpy.core.numerictypes import ScalarType
+
+poltronas = np.zeros((21,20))
+
+for i in range(21):
+    for j in range(20):
+            if i <= 4 and j >= 8:
+                poltronas[i][j] = 0
+            else:
+                poltronas[i][j] = j+1
+
+
+vetor = np.array ([poltronas, poltronas, poltronas]) 
+
+
+
+print (vetor[1])
+
